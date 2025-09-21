@@ -1,0 +1,31 @@
+<h1>이 웹사이트에 오신 것을 환영합니다!</h1>
+    <div class="line"></div>
+   <style>
+ .line {
+        display: flex;
+        align-items: center; /* 텍스트와 선을 수직 중앙 정렬 */
+        color: #333;
+        margin: 10px 0;
+    }
+
+    .line::before {
+        content: ""; /* 가상 요소에 내용을 표시하기 위해 필요 */
+        flex-grow: 1; /* 남은 공간을 모두 차지하도록 설정 */
+        margin-right: 0; /* 텍스트와 선 사이의 간격 */
+        background: #333; /* 선의 색상 */
+        height: 1px; /* 선의 두께 */
+    }
+
+    .line::after {
+        content: "";
+        flex-grow: 1;
+        margin-left: 0;
+        background: #333;
+        height: 1px;
+    }
+</style>
+<p>이 웹사이트는 <b><q>쓸데없는</q></b> 사이트입니다!</p>
+<strong>아무 기능도 없습니다!</stong><br>
+<p>죄송합니다만, 만약 이 사이트가 큰 기능을 가지고 있다고 생각하셨다면 돌아가주시길 바랍니다.</p>
+
+
